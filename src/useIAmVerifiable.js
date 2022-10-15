@@ -140,7 +140,7 @@ export function initIamVerifiable() {
 
     const iAmVerifiableAxios = axios.create({
         //
-        baseURL: 'http://ec2-18-218-183-200.us-east-2.compute.amazonaws.com/'
+        baseURL: 'https://ec2-18-218-183-200.us-east-2.compute.amazonaws.com/'
     })
     iamVerifiable = {
         nftsOfUser, isFetchingNftsOfUser, iAmVerifiableAxios
