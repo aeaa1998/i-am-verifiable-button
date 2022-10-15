@@ -56,7 +56,7 @@ const findRequisitesByMintList = async (requisites) => {
 
     if(missingRequisites && missingRequisites.length){
         //Fetch the missing
-        const _nfts = await metaplex.nfts().findAllByMintList({ mints: requisites.map(req => new PublicKey(req)) }).run()
+        const _nfts = await metaplex.nfts().findAllByMintList({ mints: requisites.map(req => new PublicKey(req)) })
         _nfts.forEach(nft => {
             localStorage.setItem(getKey(nft.mintAddress ? nft.mintAddress.toBase58() : nft.mint.address.toBase58()), serializeNft(nft))
         })

@@ -1,13 +1,13 @@
 {
   "name": "i-am-verifiable-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue SDK for verification of credentials in solana",
   "main": "index.js",
   "author": "Augusto Alonso",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@metaplex-foundation/js": "^0.15.0",
+    "@metaplex-foundation/js": "^0.17.0",
     "@metaplex-foundation/js-plugin-aws": "^0.1.3",
     "@metaplex-foundation/mpl-candy-machine": "^4.5.0",
     "@metaplex-foundation/mpl-token-metadata": "^2.2.3",
