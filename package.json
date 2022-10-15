@@ -1,6 +1,6 @@
 {
   "name": "i-am-verifiable-button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue SDK for verification of credentials in solana",
   "main": "index.js",
   "author": "Augusto Alonso",
