@@ -164,7 +164,9 @@ export async function useIamVerification(requisites){
         }
 
 
-        let credentilsOfCollection = nftsOfUser.value.map(credential => credential.collection.address.toBase58())
+        let credentilsOfCollection = nftsOfUser.value
+        // .filter()
+        .map(credential => credential.collection.address.toBase58())
         const isContained = requisites.every(req => credentilsOfCollection.includes(req))
         
         return isContained
